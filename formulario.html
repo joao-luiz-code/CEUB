@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="style.css"> <!-- Referência ao arquivo CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!-- Flatpickr CSS -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agende sua Consulta</h1>
+        </div>
+    </header>
+
+    <section class="form-section">
+        <div class="container">
+            <h2 class="text-center">Formulário de Agendamento</h2>
+            <form id="appointment-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required class="form-control">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required class="form-control">
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required class="form-control">
+
+                <label for="especialidades">Especialidades:</label>
+                <select id="especialidades" name="especialidades" class="form-control" required>
+                    <option value="medicina-familia">Medicina de Família e Comunidade</option>
+                    <option value="hemoterapia">Hemoterapia e Banco de Sangue</option>
+                    <option value="saude-mental">Saúde Mental</option>
+                </select>
+
+                <label for="date">Data da Consulta:</label>
+                <input type="text" id="date" name="date" required class="form-control">
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                
+                <div class="success-message" id="success-message" style="display: none; margin-top: 20px;">Consulta agendada com sucesso!</div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clínica Saúde e Bem-Estar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Referência ao arquivo JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- Flatpickr JS -->
+    <script>
+        flatpickr("#date", {
+            dateFormat: "Y-m-d",
+            minDate: "today", // Limita a seleção a partir de hoje
+            locale: {
+                firstDayOfWeek: 1 // Inicia a semana na segunda-feira
+            }
+        });
+
+        document.getElementById('appointment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            document.getElementById('success-message').style.display = 'block'; // Mostra a mensagem de sucesso
+            this.reset(); // Reseta o formulário após envio
+        });
+    </script>
+</body>
+</html>

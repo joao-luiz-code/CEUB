@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde e Bem-Estar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Referência ao arquivo CSS -->
+</head>
+<body>
+    <div class="overlay"></div> <!-- Adicionando a sobreposição -->
+    
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Clínica Saúde e Bem-Estar</h1>
+            <p>Com nossa clínica de especialidades, atendemos com qualidade e dedicação.</p>
+            <button id="cta-button" class="btn btn-light">Agende uma Consulta</button>
+        </div>
+    </header>
+
+    <section class="info-section py-5">
+        <div class="container">
+            <h2 class="text-white">Sobre Nossa Clínica</h2>
+            <div class="text-overlay">
+                <p>Na Clínica Saúde e Bem-Estar, oferecemos uma abordagem personalizada para cuidar da sua saúde. Contamos com uma equipe de profissionais altamente qualificados e dedicados a fornecer um atendimento de excelência.</p>
+                <p>Nossa missão é proporcionar um ambiente acolhedor e seguro, onde cada paciente é tratado com respeito e empatia. Acreditamos que a saúde é um direito de todos e trabalhamos incansavelmente para garantir que nossos serviços sejam acessíveis e de alta qualidade.</p>
+                <p>Estamos sempre atualizados com as melhores práticas e tecnologias, garantindo que nossos pacientes tenham acesso aos tratamentos mais eficazes e inovadores disponíveis no mercado, incluindo exames laboratoriais e de imagem, aconselhamento nutricional, entre outros procedimentos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="specialties-section py-5">
+        <div class="container">
+            <h2 class="text-center text-white">Nossas Especialidades</h2>
+            <ul class="nav nav-tabs" id="specialtiesTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="medicina-familia-tab" data-toggle="tab" href="#medicina-familia" role="tab" aria-controls="medicina-familia" aria-selected="true">Medicina de Família e Comunidade</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="banco-sangue-tab" data-toggle="tab" href="#banco-sangue" role="tab" aria-controls="banco-sangue" aria-selected="false">Hemoterapia e Banco de Sangue</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="saude-mental-tab" data-toggle="tab" href="#saude-mental" role="tab" aria-controls="saude-mental" aria-selected="false">Saúde Mental e Psicologia</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content mt-4" id="specialtiesTabContent">
+                <div class="tab-pane fade show active" id="medicina-familia" role="tabpanel" aria-labelledby="medicina-familia-tab">
+                    <div class="text-overlay">
+                        <p>Oferecemos consultas completas para diagnóstico e acompanhamento da sua saúde.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="banco-sangue" role="tabpanel" aria-labelledby="banco-sangue-tab">
+                    <div class="text-overlay">
+                        <p>Ajude a salvar vidas através da doação de sangue com nossa equipe especializada.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="saude-mental" role="tabpanel" aria-labelledby="saude-mental-tab">
+                    <div class="text-overlay">
+                        <p>Atendimento especializado em saúde mental e apoio psicológico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services-section py-5">
+        <div class="container">
+            <h2>Nossos Principais Serviços</h2>
+            <div class="service-wrapper d-flex flex-wrap justify-content-between">
+                <div class="service flex-fill mb-3">
+                    <h3>Consulta Geral</h3>
+                    <div class="text-overlay">
+                        <p>Nossas consultas gerais oferecem uma abordagem completa, focada em entender suas necessidades e promover um acompanhamento contínuo.</p>
+                        <h4>O que esperar:</h4>
+                        <ul>
+                            <li>Avaliação completa do estado de saúde.</li>
+                            <li>Histórico médico detalhado.</li>
+                            <li>Exame físico geral.</li>
+                            <li>Orientações sobre hábitos saudáveis.</li>
+                            <li>Encaminhamento para especialistas, se necessário.</li>
+                            <li>Exames laboratoriais e de imagem disponíveis.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service flex-fill mb-3">
+                    <h3>Exames de Laboratório</h3>
+                    <div class="text-overlay">
+                        <p>Contamos com uma ampla variedade de exames laboratoriais, essenciais para um diagnóstico preciso e rápido. Nossos exames incluem:</p>
+                        <ul>
+                            <li><strong>Hemograma Completo:</strong> Avalia a saúde geral e identifica condições como anemia.</li>
+                            <li><strong>Glicemia em Jejum:</strong> Mede o nível de açúcar no sangue, importante para o diagnóstico de diabetes.</li>
+                            <li><strong>Colesterol Total e Frações:</strong> Analisa os níveis de colesterol para avaliação do risco cardiovascular.</li>
+                            <li><strong>Função Hepática:</strong> Exames que avaliam a saúde do fígado.</li>
+                            <li><strong>Função Renal:</strong> Avalia a saúde dos rins e a eficácia de sua função.</li>
+                            <li><strong>Aconselhamento Nutricional:</strong> Oferecemos orientações personalizadas para uma alimentação saudável e equilibrada.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service flex-fill mb-3">
+                    <h3>Tratamentos Personalizados</h3>
+                    <div class="text-overlay">
+                        <p>Após a consulta e os exames necessários, elaboramos tratamentos personalizados que levam em conta o histórico e as condições individuais de cada paciente.</p>
+                        <h4>Tratamentos para Saúde Mental:</h4>
+                        <ul>
+                            <li><strong>Psicoterapia:</strong> Abordagens terapêuticas adaptadas às necessidades do paciente.</li>
+                            <li><strong>Aconselhamento:</strong> Suporte emocional e orientação em momentos difíceis.</li>
+                            <li><strong>Terapias Complementares:</strong> Inclusão de práticas como mindfulness e relaxamento.</li>
+                            <li><strong>Medicação:</strong> Prescrição de medicamentos, se necessário, sob supervisão médica.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="form-section py-5">
+        <div class="container">
+            <h2 class="text-center">Entre em Contato</h2>
+            <div class="text-overlay">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="especialidades">Especialidades:</label>
+                        <select class="form-control" id="especialidades" name="especialidades" required>
+                            <option value="medicina-familia">Medicina de Família e Comunidade</option>
+                            <option value="hemoterapia">Hemoterapia e Banco de Sangue</option>
+                            <option value="saude-mental">Saúde Mental e Psicologia</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="feedback-message mt-3"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Clínica Saúde e Bem-Estar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Carregar jQuery e Bootstrap JS -->
+    <scripts src="https://code.jquery.com/jquery-3.
